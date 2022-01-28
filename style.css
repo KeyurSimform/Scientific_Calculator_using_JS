@@ -1,0 +1,175 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    background-origin: padding-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    font-size: 16px;
+    background-color: #636363;
+}
+
+.calculator{
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+.calc-container{
+    background-color: #F2F2F2;
+
+    width: 600px;
+    height: auto;
+
+    border-radius: 0px;
+    /* padding: 20px; */
+}
+
+.output{
+    width: 100%;
+}   
+
+.operation{
+    width: 600px;
+    height: 70px;
+
+    color: grey;
+
+    font-size: 1.9em;
+    font-weight: bold;
+
+    position: relative;
+    overflow: hidden;
+}
+.operation .value{
+    position: absolute;
+
+    bottom: 5px;
+    right : 10px;
+    
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.result{
+    width: 600px;
+    height: 140px;
+
+    color: black;
+
+    font-size: 2.6em;
+    font-weight: bold;
+    
+    overflow: hidden;
+    position: relative;
+}
+
+.result .value{
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+    right : 10px;
+    
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+.input{
+    background-color: #F2F2F2;
+    /* border-radius: 0 0 25px 25px; */
+    /* border: 1px solid #1d1d1d; */
+    min-height: 340px;
+    height: auto;
+    /* color: #1d1d1d; */
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.row-rad-degree {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    /* padding: 10px; */
+}
+.row-function{
+    display: flex;
+    justify-content: flex-start;
+    /* padding: 20px; */
+    margin-left: 14px;
+}
+
+#RADIAN{
+    margin-right: 20px;
+}
+
+.dropdown{
+    margin-bottom: 10px;
+    margin-right: 10px;
+    box-shadow: 1px 5px 5px 1px rgba(0,0,0,0.75);
+    /* border-radius: none; */
+}
+.row button , .row-rad-degree button{
+    min-width: 90px;
+    min-height: 50px;
+    width: auto;
+    height: auto;
+    background-color: #F2F2F2;
+    font-size: 1.5em;
+    /* border: none; */
+    /* border-radius: 50%; */
+    /* background-color: transparent; */
+    margin-bottom : 15px;
+    cursor: pointer;
+    border: 1px solid grey;
+    box-shadow: 1px 5px 5px 1px rgba(0,0,0,0.75);
+    /* transform: scale(1.25); */
+}
+
+.row button:hover {
+    font-weight: bold;
+    background-color: grey;
+    transform: scale(1.25);
+    /* transition: ease-in-out; */
+    
+}
+
+.row #calculate{
+    /* color: #FFF; */
+    background-color: grey;
+    /* width : 121px; */
+    /* border-radius: 50px; */
+}
+.row #delete{
+    /* color: #FFF; */
+    color: #e05046;
+}
+
+#division, #multiplication, #subtraction, #addition {
+    /* color: #18b893; */
+}
+
+.input button span{
+    font-size: 0.6em;
+    position: absolute;
+}
+
+.active-angle{
+    background-color: grey !important;
+    color: #FFF !important;
+    /* border-radius: 10px !important; */
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
